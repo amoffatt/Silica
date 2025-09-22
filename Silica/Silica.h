@@ -10,9 +10,9 @@
 #import <AppKit/AppKit.h>
 #import <IOKit/IOKitLib.h>
 
-#import "CGSConnection.h"
-#import "CGSDisplays.h"
-#import "CGSSpace.h"
+// #import "CGSConnection.h" // Commented out - requires private headers
+// #import "CGSDisplays.h" // Commented out - requires private headers
+// #import "CGSSpace.h" // Commented out - requires private headers
 #import "NSRunningApplication+Silica.h"
 #import "NSScreen+Silica.h"
 #import "SIAccessibilityElement.h"

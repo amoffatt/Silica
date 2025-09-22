@@ -6,7 +6,7 @@
 #import "SISystemWideElement.h"
 
 #import <AppKit/AppKit.h>
-#import "CGSInternal/CGSHotKeys.h"
+// #import "CGSInternal/CGSHotKeys.h" // Commented out - requires private headers
 
 @implementation SISystemWideElement
 
@@ -21,6 +21,8 @@
     return sharedElement;
 }
 
+// Space switching functionality disabled - requires private CGS headers
+/*
 + (void)switchToSpace:(NSUInteger)space {
     NSEvent *event = [self eventForSwitchingToSpace:space];
     [self switchToSpaceWithEvent:event];
@@ -33,20 +35,20 @@
     CGSModifierFlags flags;
     CGKeyCode keyCode = 0;
     CGError error = CGSGetSymbolicHotKeyValue(hotKey, nil, &keyCode, &flags);
-    
+
     if (error != kCGErrorSuccess) return nil;
-    
+
     if (!CGSIsSymbolicHotKeyEnabled(hotKey)) {
         error = CGSSetSymbolicHotKeyEnabled(hotKey, true);
     }
-    
+
     CGEventRef keyboardEvent = CGEventCreateKeyboardEvent(NULL, keyCode, true);
     CGEventSetFlags(keyboardEvent, (CGEventFlags)flags);
 
     NSEvent *event = [NSEvent eventWithCGEvent:keyboardEvent];
 
     CFRelease(keyboardEvent);
-    
+
     return event;
 }
 
@@ -63,5 +65,6 @@
 
     CFRelease(keyboardEventUp);
 }
+*/
 
 @end

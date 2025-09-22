@@ -6,9 +6,9 @@
 #import "SIWindow.h"
 
 #import <Carbon/Carbon.h>
-#import "CGSInternal/CGSConnection.h"
-#import "CGSInternal/CGSHotKeys.h"
-#import "CGSInternal/CGSSpace.h"
+// #import "CGSInternal/CGSConnection.h" // Commented out - requires private headers
+// #import "CGSInternal/CGSHotKeys.h" // Commented out - requires private headers
+// #import "CGSInternal/CGSSpace.h" // Commented out - requires private headers
 #import "NSScreen+Silica.h"
 #import "SIApplication.h"
 #import "SISystemWideElement.h"
