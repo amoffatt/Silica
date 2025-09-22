@@ -1,1 +1,0 @@
-../Sources/CGSInternal/CGSWindow.h

@@ -1,1 +1,0 @@
-../Sources/CGSInternal/CGSCursor.h
